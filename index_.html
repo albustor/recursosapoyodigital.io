@@ -555,7 +555,7 @@
             }
 
             const callGeminiAPI = async (userRole, context) => {
-                const apiKey = "AIzaSyCEBVslWtMbszyDqJfNtxcpmpDXqUKZEsw";
+                const apiKey = "";
                 const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
 
                 const userQuery = `
@@ -662,7 +662,7 @@
                     const selectedTools = moduleTools[moduleSelect];
                     const userQuery = `Como experto diseñador instruccional, genera tres ideas creativas y prácticas para una lección sobre "${lessonTopic}" para estudiantes de ${gradeLevel}. Cada idea debe integrar una o más de las siguientes herramientas digitales: ${selectedTools}. Las ideas deben ser atractivas y explicar claramente cómo usar la(s) herramienta(s) en el contexto de la clase. Formatea la respuesta en HTML con un h3 para cada idea y párrafos para la descripción.`;
                     
-                    const apiKey = "AIzaSyCEBVslWtMbszyDqJfNtxcpmpDXqUKZEsw";
+                    const apiKey = "";
                     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
                     
                     const payload = {
@@ -702,4 +702,5 @@
         });
     </script>
 </body>
+
 </html>
